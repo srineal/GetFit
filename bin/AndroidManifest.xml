@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="finalProject.group_2B.getfit"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="loginSignUp.LoginSignUpActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BudgetActivity"
+            android:label="@string/title_activity_budget" >
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name=".BudgetActivity"
+            android:label="@string/title_activity_budget_meals" >
+        </activity>
+        <activity
+            android:name="meals.MealActivity"
+            android:label="@string/title_activity_meal" >
+        </activity>
+        <activity
+            android:name="meals.FoodItemListActivity"
+            android:label="@string/title_activity_food_item_list" >
+        </activity>
+        <activity
+            android:name="meals.PreviewFoodItemActivity"
+            android:label="@string/title_activity_preview_food_item" >
+        </activity>
+        <activity
+            android:name=".ProgramPlanActivity"
+            android:label="@string/title_activity_gpm" >
+        </activity>
+        <activity
+            android:name=".GoalsActivity"
+            android:label="@string/title_activity_goals" >
+        </activity>
+        <activity
+            android:name=".ProgramActivity"
+            android:label="@string/title_activity_program" >
+        </activity>
+        <activity
+            android:name=".PlanActivity"
+            android:label="@string/title_activity_plan" >
+        </activity>
+    </application>
+
+</manifest>

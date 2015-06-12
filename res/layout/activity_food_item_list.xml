@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ListView
+        android:id="@+id/foodItemListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/searchItemText" >
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/searchItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/foodItemListDone"
+        android:layout_toLeftOf="@+id/searchItemButton"
+        android:ems="10"
+        android:hint="Enter a food item name" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/foodItemListDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Done" />
+
+    <Button
+        android:id="@+id/searchItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/searchItemText"
+        android:text="Search" />
+
+</RelativeLayout>
